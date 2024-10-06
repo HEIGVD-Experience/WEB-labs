@@ -1,0 +1,185 @@
+html,
+body {
+  height: 100%;
+  overflow-y: hidden;
+  font-family: "Noto Sans", sans-serif;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+.grey400 {
+  color: #9CA3AF
+}
+
+.box {
+  display: flex;
+  align-items: end;
+}
+
+.main_description {
+  margin-left: 32px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas: "main queue" "player player";
+  grid-template-columns: 1fr 330px;
+  grid-template-rows: 1fr 80px;
+  height: 100%;
+}
+
+.playlist-item {
+  margin-top: 32px;
+  width: 100%;
+}
+
+#main {
+  grid-area: main;
+  overflow-y: auto;
+  height: 100%;
+}
+
+#queue {
+  grid-area: queue;
+  background-color: #F3F4F6;
+  border: 1px solid #E5E7EB;
+}
+
+#player {
+  grid-area: player;
+  display: grid;
+  height: 80px;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  border-top: 1px solid #E5E7EB;
+}
+
+.song-info,
+.controls {
+  display: flex;
+  align-items: center;
+}
+
+.controls {
+  justify-content: center;
+}
+
+.powered-by {
+  flex-flow: column nowrap;
+  display: flex;
+  justify-self: end;
+  height: 20px;
+  justify-content: center;
+  margin-right: 16px;
+}
+
+.btn-controls {
+  width: 40px;
+}
+
+.btn-central {
+  margin-left: 32px;
+  margin-right: 32px;
+}
+
+.title,
+.subtitle1,
+.subtitle2,
+.body1,
+.body2,
+.overline {
+  font-family: "Noto Sans", sans-serif;
+}
+
+.title {
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 1.25;
+}
+
+.subtitle1 {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.subtitle2 {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.body1 {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.body2 {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.overline {
+  font-size: 12px;
+  line-height: 1.5;
+  color: #9CA3AF;
+}
+
+.queue {
+  position: relative;
+  width: 330px;
+  flex-flow: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.next-track {
+  position: absolute; 
+  top: 32px; 
+  left: 32px;
+}
+
+.mx-0 {
+  margin: 0!important;
+}
+
+.mx-8 {
+  margin: 8px 0;
+}
+
+.ml-16 {
+  margin-left: 16px;
+}
+
+.ml-86 {
+  margin-left: 86px;
+}
+
+.mt-48 {
+  margin-top: 48px;
+}
+
+.mt-86 {
+  margin-top: 86px;
+}
+
+.h-30 {
+  height: 30px;
+}
+
+.h-80 {
+  height: 80px;
+}
+
+.w-250 {
+  width: 250px;
+}

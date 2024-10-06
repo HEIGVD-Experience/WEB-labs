@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#game {
+    display: flex;
+}
+
+canvas {
+    border: 2px solid black;
+}
+
+#infoPannel {
+    margin-left: 10px;
+}
